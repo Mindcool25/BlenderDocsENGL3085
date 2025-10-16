@@ -5,3 +5,6 @@ You should only need to run ``rundoc.sh`` to build everything as of right now. T
 
 ## Notes
 I have named the md files in a way that well make them be added to the documentation in the right order, so make sure that the numbers match (probably just pick a number to use as a tens place, then change the one's place as you need)
+
+### New pages
+- Make sure that you have `\newpage` at the end of each of the MD files so that pandoc seperates each section pagewise a bit better.
