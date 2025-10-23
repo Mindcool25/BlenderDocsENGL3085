@@ -6,7 +6,6 @@ Rendering in Blender is how you get the thing you made tranformed into the end p
 To navigate to the output options, click on the Printer icon on the right hand side of the interface, as shown below.
 
 ![*Output Options section of the righthand lower side bar.*](images/OutputOptionSidePanel.png)
-
 From here, there are a few sections that you can change to result in your desired output.
 
 ### Format
@@ -23,5 +22,24 @@ The frame range section allows you to determine which frames of an animation you
 ![*Frame Range section of the output options side bar*](images/OutputOptions.png){ width=300px }
 
 ## Render Options
+![image here](){ width=300px}
 
-### Rendering Engines
+There are three different renering engines that Blender has available. EEVEE, Cycles, and workbench.
+
+
+### EEVEE Engine
+![image here](){ width=300px}
+
+EEVEE is Blender's realtime reandering engine. This means that it runs fast enough that you can use it to view a closer reperesentation to what the final render might look like while changing the model in real time. This is useful for when you are working on a project that doesn't need path traced lighting, or for prevewing textures before fully rendering with a ray tracing engine. EEVEE does have some limitations, such as <INSERT LIMITATIONS HERE>
+<EEVEE Specific options here>
+
+### Cycles Engine
+![image here](){ width=300px}
+
+Cycles is Blender's path tracing renderer, generally used for production rendering because of its physically based rendering process. It is useful in the afformentioned production renders, but can also be useful in situations that require more realistic rendering techniques to produce more realistic images.
+<Cycles specific options here>
+
+### Workbench Engine
+![image here](){ width=300px}
+
+Workbench generally isn't used in the final rendering process, as it is the rendering engine used within Blender's viewport. <Probably more stuff here>
