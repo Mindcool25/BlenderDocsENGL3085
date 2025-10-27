@@ -6,6 +6,7 @@ Rendering in Blender is how you get the thing you made tranformed into the end p
 To navigate to the output options, click on the Printer icon on the right hand side of the interface, as shown below.
 
 ![*Output Options section of the righthand lower side bar.*](images/OutputOptionSidePanel.png)
+
 From here, there are a few sections that you can change to result in your desired output.
 
 ### Format
@@ -22,24 +23,34 @@ The frame range section allows you to determine which frames of an animation you
 ![*Frame Range section of the output options side bar*](images/OutputOptions.png){ width=300px }
 
 ## Render Options
-![image here](){ width=300px}
+![Rendering Engine Options](images/RenderingEngines.png){ width=300px}
 
-There are three different renering engines that Blender has available. EEVEE, Cycles, and workbench.
-
+There are three different rendering engines that Blender has available. EEVEE, Cycles, and workbench. We won't be going over the workbench rendering engine as it generally isn't used for final rendering.
 
 ### EEVEE Engine
-![image here](){ width=300px}
+![EEVEE Options](images/EEVEEOptions.png){ width=300px}
 
-EEVEE is Blender's realtime reandering engine. This means that it runs fast enough that you can use it to view a closer reperesentation to what the final render might look like while changing the model in real time. This is useful for when you are working on a project that doesn't need path traced lighting, or for prevewing textures before fully rendering with a ray tracing engine. EEVEE does have some limitations, such as <INSERT LIMITATIONS HERE>
-<EEVEE Specific options here>
+EEVEE is Blender's real-time rendering engine. This means that it runs fast enough that you can use it to view a closer representation to what the final render might look like while changing the model in real time. This is useful for when you are working on a project that doesn't need path traced lighting, or for previewing textures before fully rendering with a ray tracing engine. EEVEE does have some limitations to keep in mind due to its rastarized approach to rendering, as opposed to a more physics based model, making realism harder to achieve. Some important settings are:
+- Samples: This determines the number of iterations ran when rendering the final image.
+- Motion blur: If you desire motion blur in your final image, you can enable this setting and change some values within its drop down.
+- Raytracing: This can be used if you want output similar to cycles, but within the EEVEE engine.
+- Simplify: This is useful if you want a more retro or simple look to your final render. It can also allow you to render tests faster to see if the final render will work well.
 
 ### Cycles Engine
-![image here](){ width=300px}
+![Cycles Options](images/CyclesOptions.png){ width=300px}
 
-Cycles is Blender's path tracing renderer, generally used for production rendering because of its physically based rendering process. It is useful in the afformentioned production renders, but can also be useful in situations that require more realistic rendering techniques to produce more realistic images.
-<Cycles specific options here>
+Cycles is Blender's path tracing renderer, generally used for production rendering because of its physically based rendering process. It is useful in the afformentioned production renders, but can also be useful in situations that require more realistic rendering techniques to produce more realistic images. Some important settings to keep in mind are:
 
-### Workbench Engine
-![image here](){ width=300px}
+- Noise Threshold: Determines how much visual noise is allowed to be in the final render. A lower noise threshold will result in a less noisy final render, but will cause the render to take longer.
+- Max and Min Samples: This determines how many samples or passes a given section can have. This has a large impact on the time it takes to render an image, and can be fine tuned to be as efficient as possible. For example. if there are large sections of the same color with no shade variation, less samples can be beneficial when it comes to render times.
+- Denoise: This setting sets if the denoising process is applied to the final render once all samples have been ran. This can help reduce noise by smoothing the colors of each pixel into each other, but can result in fuzzy looking images. This can be enabled here or while compositing.
 
-Workbench generally isn't used in the final rendering process, as it is the rendering engine used within Blender's viewport. <Probably more stuff here>
+## Final Rendering
+When everything is set up in a way that you like, you can move on to the final render. By default, you can use `F12` to quickly start a render, or you can use the Render drop down menu at the top and select render image from there.
+![Render Image in Render drop down menu](images/RenderImage.png){ width=300 }
+
+Once you start a render, a new window will pop open and it will show you the current progress of the render.
+![Rendering window](images/RenderWindow.png)
+The image shown is what the output of the render will be. The final render will show up in the output directory defined in the output options.
+
+\newpage
