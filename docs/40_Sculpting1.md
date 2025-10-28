@@ -34,4 +34,13 @@ Sculpting in blender is a digital version of clay modeling. You can push, pull, 
 In the top right corner of the screen there is a remesh drop down menu. Select this menu to remesh the object you are currently using. The default settings should be okay for beginners. After remeshing your object you can begin sculpting.
 
 ![*ArrowsPointingToBrushesLocationandRemeshingMenu*](images/BrushesAndRemeshing.png)
+
+/newpage
   
+# Symmetry
+Symmetry is important when sculpting characters. If you want changes made on one side to also be made on the other side of the figure, you can do this using the mirror tool. On the right side of the screen there is a toolbar. Underneath the brush settings and remeshing menus, there is a section for Symmetry. You can select which axes you want to mirror by clicking on them. You can select multiple axes at once, or none at all. 
+- Blender uses the three main axes for symmetry:
+  - X-axis -> left ↔ right 
+  - Y-axis -> front ↔ back
+  - Z-axis -> top ↔ bottom
+ 
