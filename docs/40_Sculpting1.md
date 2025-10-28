@@ -43,4 +43,5 @@ Symmetry is important when sculpting characters. If you want changes made on one
   - X-axis -> left ↔ right 
   - Y-axis -> front ↔ back
   - Z-axis -> top ↔ bottom
+  ![*ArrowsPointingToMirrorTool*](images/MirrorTool.png)
  
