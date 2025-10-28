@@ -33,5 +33,5 @@ Sculpting in blender is a digital version of clay modeling. You can push, pull, 
 ## How to Remesh
 In the top right corner of the screen there is a remesh drop down menu. Select this menu to remesh the object you are currently using. The default settings should be okay for beginners. After remeshing your object you can begin sculpting.
 
-
+![*ArrowsPointingToBrushesLocationandRemeshingMenu*](images/BrushesAndRemeshing.png)
   
