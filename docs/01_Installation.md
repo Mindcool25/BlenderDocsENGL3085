@@ -235,3 +235,5 @@ This section provides detailed step-by-step instructions for installing Blender 
 - Run installer as administrator
 - Check folder permissions
 - Disable User Account Control temporarily
+
+\newpage

@@ -9,6 +9,8 @@ To navigate to the output options, click on the Printer icon on the right hand s
 
 From here, there are a few sections that you can change to result in your desired output.
 
+\newpage
+
 ### Format
 ![*Format section of the output options side bar*](images/FormatSection.png){ width=300px }
 
@@ -22,10 +24,14 @@ The frame range section allows you to determine which frames of an animation you
 ### Output
 ![*Frame Range section of the output options side bar*](images/OutputOptions.png){ width=300px }
 
+The output section allows you to change the directory that the final render will be put in, the file type you want the final render saved as, and the compression level of teh final image. You can also modify how the colors are handled, as well as the pixel density.
+\newpage
+
 ## Render Options
 ![Rendering Engine Options](images/RenderingEngines.png){ width=300px}
 
 There are three different rendering engines that Blender has available. EEVEE, Cycles, and workbench. We won't be going over the workbench rendering engine as it generally isn't used for final rendering.
+\newpage
 
 ### EEVEE Engine
 ![EEVEE Options](images/EEVEEOptions.png){ width=300px}
@@ -35,15 +41,18 @@ EEVEE is Blender's real-time rendering engine. This means that it runs fast enou
 - Motion blur: If you desire motion blur in your final image, you can enable this setting and change some values within its drop down.
 - Raytracing: This can be used if you want output similar to cycles, but within the EEVEE engine.
 - Simplify: This is useful if you want a more retro or simple look to your final render. It can also allow you to render tests faster to see if the final render will work well.
+\newpage
 
 ### Cycles Engine
 ![Cycles Options](images/CyclesOptions.png){ width=300px}
+
 
 Cycles is Blender's path tracing renderer, generally used for production rendering because of its physically based rendering process. It is useful in the afformentioned production renders, but can also be useful in situations that require more realistic rendering techniques to produce more realistic images. Some important settings to keep in mind are:
 
 - Noise Threshold: Determines how much visual noise is allowed to be in the final render. A lower noise threshold will result in a less noisy final render, but will cause the render to take longer.
 - Max and Min Samples: This determines how many samples or passes a given section can have. This has a large impact on the time it takes to render an image, and can be fine tuned to be as efficient as possible. For example. if there are large sections of the same color with no shade variation, less samples can be beneficial when it comes to render times.
 - Denoise: This setting sets if the denoising process is applied to the final render once all samples have been ran. This can help reduce noise by smoothing the colors of each pixel into each other, but can result in fuzzy looking images. This can be enabled here or while compositing.
+\newpage
 
 ## Final Rendering
 When everything is set up in a way that you like, you can move on to the final render. By default, you can use `F12` to quickly start a render, or you can use the Render drop down menu at the top and select render image from there.

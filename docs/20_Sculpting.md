@@ -5,15 +5,16 @@ You can access sculpt mode from the drop down mode menu in the top left corner o
 
 ![*ArrowsPointingToLocationOfSculptModeSelection*](images/SelectSculptMode.png)
 
-/newpage
+\newpage
 
 # Brushes
 Sculpting is done using brushes. Brushes follow the curvature of the surface of the object. The inner ring of the brush cursor visualizes the strength of the brush. There are several different brushes you can choose from, each having a different strength and purpose. 
 
 ## Common Brushes
 Here are some common brushes used during sculpting. These brushes can be selected at the bottom of the screen. Hovering your mouse over these icons shows you the name of the brush and a quick description of it's functionality.
+
 - Clay Strips
-  -  block out broad shapes and build up volumes before refining them further
+  - Block out broad shapes and build up volumes before refining them further
 - Grab
   - moves geometry across the screen for general shaping.
 - Smooth
@@ -25,7 +26,7 @@ Here are some common brushes used during sculpting. These brushes can be selecte
 - Crease 
   - Used for creating creases or sharpening existing creases.
 
-/newpage
+\newpage
 
 # Remeshing
 Sculpting in blender is a digital version of clay modeling. You can push, pull, and smooth the surface of the object to mold it into the shape you desire. In blender, this "clay" is made up of tiny connected polygons. Brushes move the points of these polygons. The starter objects do not have many polygons, so the sculpting brushes will not be able to smoothly adjust the surface of the object. You can increase the number of polygons on your object using remeshing. 
@@ -35,13 +36,14 @@ In the top right corner of the screen there is a remesh drop down menu. Select t
 
 ![*ArrowsPointingToBrushesLocationandRemeshingMenu*](images/BrushesAndRemeshing.png)
 
-/newpage
+\newpage
   
 # Symmetry
 Symmetry is important when sculpting characters. If you want changes made on one side to also be made on the other side of the figure, you can do this using the mirror tool. On the right side of the screen there is a toolbar. Underneath the brush settings and remeshing menus, there is a section for Symmetry. You can select which axes you want to mirror by clicking on them. You can select multiple axes at once, or none at all. 
 - Blender uses the three main axes for symmetry:
-  - X-axis -> left ↔ right 
-  - Y-axis -> front ↔ back
-  - Z-axis -> top ↔ bottom
+  - X-axis -> left <-> right 
+  - Y-axis -> front <-> back
+  - Z-axis -> top <-> bottom
   ![*ArrowsPointingToMirrorTool*](images/MirrorTool.png)
  
+ \newpage
