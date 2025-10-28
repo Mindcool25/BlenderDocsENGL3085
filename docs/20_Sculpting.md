@@ -29,7 +29,7 @@ Here are some common brushes used during sculpting. These brushes can be selecte
 \newpage
 
 # Remeshing
-Sculpting in blender is a digital version of clay modeling. You can push, pull, and smooth the surface of the object to mold it into the shape you desire. In blender, this "clay" is made up of tiny connected polygons. Brushes move the points of these polygons. The starter objects do not have many polygons, so the sculpting brushes will not be able to smoothly adjust the surface of the object. You can increase the number of polygons on your object using remeshing. 
+Sculpting in blender is a digital version of clay modeling. You can push, pull, and smooth the surface of the object to mold it into the shape you desire. In blender, this "clay" is made up of tiny connected polygons. Brushes move the points of these polygons. The starter objects do not have many polygons, so the sculpting brushes will not be able to smoothly adjust the surface of the object unless you add more polygons. You can increase the number of polygons on your object using remeshing. 
 
 ## How to Remesh
 In the top right corner of the screen there is a remesh drop down menu. Select this menu to remesh the object you are currently using. The default settings should be okay for beginners. After remeshing your object you can begin sculpting.
