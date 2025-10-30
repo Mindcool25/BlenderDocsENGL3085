@@ -1,0 +1,75 @@
+/* Page */
+@page {
+  size: letter; /* or A4 */
+  margin: 1in;
+  background: #ffffff;
+}
+
+/* Body */
+body {
+  font-family: Georgia, serif;
+  font-size: 13px;
+  line-height: 2;
+  color: #000000;
+}
+
+/* Headings */
+h1 {
+  font-size: 80px;
+  text-align: center;
+  /* no break here */
+}
+h2 {
+  font-size: 38px;
+  break-before: page; /* new page for each subtitle */
+  text-align: left;
+}
+/* exception: first h2 follows title on same page */
+h1 + h2 {
+  break-before: avoid;
+}
+
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 19px;
+}
+
+/* Images */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* prevent overflow */
+  height: auto; /* keep aspect ratio */
+  page-break-inside: avoid; /* keep image intact */
+  box-sizing: border-box;
+}
+
+/* Optional helper class if you want fixed scaling */
+img.half {
+  width: 50%;
+}
+
+/* Code blocks */
+pre,
+code {
+  font-family: "JetBrains Mono", monospace;
+  background: #f3f3f3;
+  color: #000;
+  padding: 0.5rem;
+  border-radius: 4px;
+  white-space: pre-wrap; /* wrap long lines */
+  overflow-wrap: anywhere; /* break long tokens/URLs */
+}
+pre {
+  page-break-inside: avoid;
+  margin: 0; /* remove indent */
+  padding-left: 0.5rem; /* optional, keeps minimal inner spacing */
+}

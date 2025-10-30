@@ -1,3 +1,5 @@
+- Change to more instructions
+
 # Rendering
 
 Rendering in Blender is how you get the thing you made tranformed into the end product of an image. It is important to understand the different rendering engines, Eevee, Cycles, and Workbench, as well as the different settings for each of those. Later we will go over the different ways of making the end render look better by **compositing**.
