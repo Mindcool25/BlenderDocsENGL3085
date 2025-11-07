@@ -1,5 +1,6 @@
 #!/bin/sh
 
+pandoc docs/*.md -o out/BlenderDocs.pdf --toc -s --pdf-engine=weasyprint --css style.css
 # Try different PDF engines in order of preference
 if command -v pdflatex >/dev/null 2>&1; then
     pandoc docs/*.md -o out/BlenderDocs.pdf --toc -s --pdf-engine=pdflatex
