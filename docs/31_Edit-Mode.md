@@ -64,6 +64,22 @@ Confirmation using `Left Click` or `Right Click` still applies when making concu
 
 ![*Multi Loop Cut preview.*](images/30_multiple-loop-cuts.png)
 
-[Begin Select Loops Tool]
+\newpage
+
+### Extrude
+The **Extrude** tool is extremely important to the modeling process. This tool allows the user to create new object geometry.
+
+The **Extrude** tool can be accessed from the left-hand tool menu.
+
+![*Extrude tool located in the left-hand tool bar.*](images/31_extrude-button.png)
+
+Alternaticely, pressing `e` while the **Select Box** tool is active and at least 1 face is selected will activate the **Extrude** tool for a single operation. By default, the **Extrude** tool will extrude along the axis of the selected face. For more precision than simply dragging with the mouse, you can type a number immediately after activating the hotkey. This will extrude the face outward by that many units.
+
+\newpage
+
+# Edit Tools Demo
+The following image shows the use of the **Loop Cut** and **Extrude** tools to model a simple videogame monster. The inital cube is subdivided using **Loop Cuts** and the subsequent sub-faces are extruded to give the body shape.
+
+![*Edit tools demo.*](images/31_creeper.png)
 
 \newpage
