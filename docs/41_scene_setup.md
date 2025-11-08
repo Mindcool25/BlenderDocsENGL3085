@@ -1,4 +1,0 @@
-- Setting up the objects for the scene
-- Adding and modifying a camera
-- Lighting and render preview
-- Texturing the car?

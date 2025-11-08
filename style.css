@@ -9,13 +9,12 @@
 body {
   font-family: Georgia, serif;
   font-size: 13px;
-  line-height: 2;
   color: #000000;
 }
 
 /* Headings */
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   /* no break here */
 }

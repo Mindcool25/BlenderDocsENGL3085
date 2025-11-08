@@ -1,6 +1,7 @@
 ---
 geometry: margin=2cm
 output: pdf_document
+title: Blender for Beginners
 ---
 
 \newpage
